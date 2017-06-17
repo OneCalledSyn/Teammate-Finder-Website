@@ -21,10 +21,6 @@ h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
-html {
-  height: 100%;
-}
-
 .navbar, .home-callout {
   //Gradient provided by @_ighosh at uiGradients.com
   background: #4b6cb7;  /* fallback for old browsers */
@@ -37,6 +33,26 @@ html {
 .navbar {
   border: none;
 }
+
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: white;
+  opacity: 0.75
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  opacity: 0.75;
+}
+
 
 .home-callout {
   margin-top: -20px;
