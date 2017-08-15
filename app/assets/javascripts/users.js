@@ -27,7 +27,7 @@ $(document).on('turbolinks:load', function(){
       alert('The credit card number seems to be invalid')
     }
     
-    //Validate CVC number (Taking out bang operator makes it work, not sure why)
+    //Validate CVC number
     if (!Stripe.card.validateCVC(cvcNum)) {
       error = true;
       alert('The CVC number seems to be invalid')
