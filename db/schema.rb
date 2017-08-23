@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170819011826) do
+ActiveRecord::Schema.define(version: 20170822232907) do
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
@@ -31,12 +31,16 @@ ActiveRecord::Schema.define(version: 20170819011826) do
     t.integer  "user_id"
     t.string   "first_name"
     t.string   "last_name"
-    t.string   "job_title"
+    t.string   "summoner_name"
+    t.string   "main_role"
+    t.string   "secondary_role"
+    t.string   "solo_rank"
+    t.string   "flex_rank"
     t.string   "phone_number"
     t.string   "email_address"
     t.text     "description"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "users", force: :cascade do |t|

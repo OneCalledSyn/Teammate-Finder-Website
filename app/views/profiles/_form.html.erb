@@ -8,16 +8,32 @@
     <%= f.text_field :last_name, class: 'form-control' %>
   </div>
   <div class = "form-group">
-    <%= f.label :job_title %>
-    <%= f.select :job_title, ['Developer', 'Entrepreneur', 'Investor'], {}, class: 'form-control' %>
+    <%= f.label :summoner_name %>
+    <%= f.text_field :summoner_name, class: 'form-control' %>
+  </div>
+  <div class = "form-group">
+    <%= f.label :main_role %>
+    <%= f.select :main_role, ['Top', 'Jungle', 'Mid', 'ADC', 'Support'], {}, class: 'form-control' %>
+  </div>
+  <div class = "form-group">
+    <%= f.label :secondary_role %>
+    <%= f.select :secondary_role, ['Top', 'Jungle', 'Mid', 'ADC', 'Support', 'Fill'], {}, class: 'form-control' %>
+  </div>
+  <div class = "form-group">
+    <%= f.label :solo_rank %>
+    <%= f.select :solo_rank, ['Bronze', 'Silver', 'Gold', 'Platinum', 'Diamond', 'Master', 'Challenger'], {}, class: 'form-control' %>
+  </div>
+  <div class = "form-group">
+    <%= f.label :flex_rank %>
+    <%= f.select :flex_rank, ['Bronze', 'Silver', 'Gold', 'Platinum', 'Diamond', 'Master', 'Challenger'], {}, class: 'form-control' %>
   </div>
   <div class = "form-group">
     <%= f.label :phone_number %>
     <%= f.text_field :phone_number, class: 'form-control' %>
   </div>
   <div class = "form-group">
-    <%= f.label :contact_email %>
-    <%= f.text_field :contact_email, class: 'form-control' %>
+    <%= f.label :email_address %>
+    <%= f.text_field :email_address, class: 'form-control' %>
   </div>
   <div class = "form-group">
     <%= f.label :description %>
