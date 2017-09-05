@@ -1,1 +1,12 @@
-<%= @user.inspect %>
+<%= @user.profile.first_name %> <%= @user.profile.last_name %>
+
+<% if current_user.plan_id == 2 %>
+  <%= @user.profile.summoner_name %>
+  <%= @user.profile.main_role %>
+  <%= @user.profile.secondary_role %>
+  <%= @user.profile.solo_rank %>
+  <%= @user.profile.flex_rank %>
+  <%= @user.profile.phone_number %>
+  <%= @user.profile.email_address %>
+<% end %>
+<%= @user.profile.description %>
