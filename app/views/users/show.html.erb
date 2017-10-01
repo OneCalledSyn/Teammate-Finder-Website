@@ -1,13 +1,31 @@
-<%= image_tag @user.profile.avatar.url %>
-<%= @user.profile.first_name %> <%= @user.profile.last_name %>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-md-3 text-center">
+      <%= image_tag @user.profile.avatar.url, class: 'avatar-show-img' %>
+    </div>
+    
+    <div class = "col-md-6">
+      <h1><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
+      <div class = "well profile-block profile-description">
+        <h3>Description</h3>
+        <%= @user.profile.description %>
+      </div>
+      <% if current_user.plan_id == 2 %>
+        <div class = "well profile-block profile-contact-info">
+          <h3>Contact and User Info</h3>
+          <%= @user.profile.summoner_name %>
+          <%= @user.profile.main_role %>
+          <%= @user.profile.secondary_role %>
+          <%= @user.profile.solo_rank %>
+          <%= @user.profile.flex_rank %>
+          <%= @user.profile.phone_number %>
+          <%= @user.profile.email_address %>
+        </div>
+      <% end %>
 
-<% if current_user.plan_id == 2 %>
-  <%= @user.profile.summoner_name %>
-  <%= @user.profile.main_role %>
-  <%= @user.profile.secondary_role %>
-  <%= @user.profile.solo_rank %>
-  <%= @user.profile.flex_rank %>
-  <%= @user.profile.phone_number %>
-  <%= @user.profile.email_address %>
-<% end %>
-<%= @user.profile.description %>
+    </div>
+  </div>
+</div>
+
+
+
