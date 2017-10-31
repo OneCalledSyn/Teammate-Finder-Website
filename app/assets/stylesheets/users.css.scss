@@ -19,3 +19,14 @@
   background-color: #5bc0de;
   border-color: #46b8da;
 }
+
+// User Index Page styles
+.user-index-avatar {
+  width: 128px;
+  height: 128px;
+  //border-radius: 50%; <-- Would make the icons round
+}
+
+.well.white-bg {
+  background-color: white;
+}

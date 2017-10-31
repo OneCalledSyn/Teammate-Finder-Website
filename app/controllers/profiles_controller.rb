@@ -53,7 +53,7 @@ class ProfilesController < ApplicationController
       @user = User.find(params[:user_id])
       redirect_to (root_url) unless @user == current_user
       if @user != current_user
-        then flash[:success] = "Trying to edit other users' profiles, are we? Surely you've been raised better than that..." 
+        then flash[:warning] = "Keep your hands to yourself!" 
       end
     end
 end
